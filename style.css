@@ -137,3 +137,6 @@ body {
 .texto>h3{
     font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+}
