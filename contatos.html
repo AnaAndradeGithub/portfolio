@@ -4,9 +4,172 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ana Andrade | Portfólio</title>
-    <link rel="stylesheet" href="contacts.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.black-section {
+    background-color: #000;
+    width: 20%;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 90px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    color: #000;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 200px;
+}
+
+.menu li {
+    margin-bottom: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+.current-folder {
+    position: relative;
+    width: 100%;
+    height: 1.5px;
+    background-color: #424242;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+
+.menu a:hover {
+    position: relative;
+}
+
+.menu a:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    animation: expand 0.3s ease forwards;
+}
+
+@keyframes expand {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.white-section {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.canais {
+    display: flex;
+}
+
+.nome {
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.nome>h1 {
+    font-weight: 400;
+}
+
+.gmail, .linkedin {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 50%; 
+    padding-top: 150px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.gmail>h1 {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.linkedin>h1 {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+.nome2 {
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+.nome2>h1 {
+    font-weight: 300;
+}
+
+.btn {
+    border: none;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+}
+
+.socorro{
+    cursor: pointer;
+}
+    </style>
 </head>
 <body>
     <div class="overlay"></div>
