@@ -14,8 +14,8 @@
         <div class="black-section">
             <div class="circle">A</div>
             <ul class="menu">
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
+                <li><a class="socorro" onclick="sobremim()" >Sobre mim</a></li>
+                <li><a class="socorro" onclick="contatos()">Contatos</a></li>
             </ul>
             <div class="current-folder"></div>
         </div>
@@ -33,19 +33,42 @@
         
             <div class="canais">
                 <div class="gmail">
-                    <a target="_blank" href="mailto:anaandrade.dev@gmail.com"><img class="logo" src="img/gmail.png" alt=""></a>
+                    <a href="mailto:seuendereco@gmail.com" target="_blank" class="logo">
+                        <img class="logo" src="img/gmail.png" alt="">
+                    </a>
                     <h1>Email</h1>
                 </div>
-        
+            
                 <div class="linkedin">
-                    <a target="_blank" href="https://www.linkedin.com/in/ana-andrade-60ba0420b/"><img class="logo" src="img/linkedin.webp" alt=""></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="logo">
+                        <img class="logo" src="img/linkedin.webp" alt="">
+                    </a>
                     <h1>LinkedIn</h1>
                 </div>
             </div>
+            
 
             
         </div>
     </div>
-    <script src="script.js"></script>
+    
+    <script>
+        function gmail() {
+            window.location.href = "mailto:anaandrade.dev@gmail.com";
+        }
+    
+        function linkedin() {
+            window.open("https://www.linkedin.com/in/ana-andrade-60ba0420b/", "_blank");
+        }
+
+            function sobremim() {
+        window.location.href = "index.html"; 
+    }
+
+        function contatos() {
+            window.location.href = "contatos.html"; 
+        }
+
+    </script>
 </body>
 </html>

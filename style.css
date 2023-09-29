@@ -138,5 +138,6 @@ body {
     font-weight: 300;
 }
 
-@media screen and (max-width: 768px) {
+.socorro{
+    cursor: pointer;
 }

@@ -14,8 +14,8 @@
         <div class="black-section">
             <div class="circle">A</div>
             <ul class="menu">
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="contatos.html">Contatos</a></li>
+                <li><a class="socorro" onclick="sobremim()" >Sobre mim</a></li>
+                <li><a class="socorro" onclick="contatos()">Contatos</a></li>
             </ul>
             <div class="current-folder"></div>
         </div>
@@ -43,6 +43,17 @@
         </div>
         
     </div>
-    <script src="script.js"></script>
+    
+    
+
+    <script>
+        function sobremim() {
+        window.location.href = "index.html"; 
+    }
+
+        function contatos() {
+            window.location.href = "contatos.html"; 
+        }
+    </script>
 </body>
 </html>

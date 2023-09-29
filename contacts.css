@@ -148,3 +148,14 @@ body {
 .nome2>h1 {
     font-weight: 300;
 }
+
+.btn {
+    border: none;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+}
+
+.socorro{
+    cursor: pointer;
+}
